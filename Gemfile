@@ -15,5 +15,6 @@ if RUBY_VERSION < "2.1"
 end
 
 gem "jekyll-browsersync", group: [:jekyll_plugins]
+gem "html-proofer"
 
 gem "jekyll"
