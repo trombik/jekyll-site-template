@@ -1,18 +1,24 @@
-language:      node_js
+language:      ruby
+rvm:
+  - 2.6.5
+sudo: false
 git:
   depth:       3
 node_js:
   - "node"
 install:       npm install
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 script:
   - npm test
   - gulp
-  - bundle install --path=.bundle
+  - bundle install --path=~/.bundle
   - bundle exec jekyll build
   - bundle exec htmlproofer --empty_alt_ignore --disable_external ./_site
 cache:
   directories:
     - node_modules
-    - .bundle
+    - ~/.bundle
 notifications:
   email:       false
