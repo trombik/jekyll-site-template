@@ -7,8 +7,12 @@ install:       npm install
 script:
   - npm test
   - gulp
+  - bundle install --path=.bundle
+  - bundle exec jekyll build
+  - bundle exec htmlproofer --empty_alt_ignore --disable_external ./_site
 cache:
   directories:
     - node_modules
+    - .bundle
 notifications:
   email:       false
