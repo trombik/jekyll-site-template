@@ -14,4 +14,6 @@ if RUBY_VERSION < "2.1"
   gem "liquid", "~> 3.0.0"
 end
 
+gem "jekyll-browsersync", group: [:jekyll_plugins]
+
 gem "jekyll"
