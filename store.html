@@ -7,16 +7,11 @@ post_script: |
      $('.list-hours li').eq(new Date().getDay()).addClass('today');
    </script>
 ---
-    <section class="page-section cta">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-9 mx-auto">
-            <div class="cta-inner text-center rounded">
-              <h2 class="section-heading mb-5">
-                <span class="section-heading-upper">Come On In</span>
-                <span class="section-heading-lower">We're Open</span>
-              </h2>
-              <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+{% include components/cta.html
+    heading_upper = "Come On In"
+    heading_lower = "We're Open"
+    include.section_heading_size = "mb-5"
+    content = '<ul class="list-unstyled list-hours mb-5 text-left mx-auto">
                 <li class="list-unstyled-item list-hours-item d-flex">
                   Sunday
                   <span class="ml-auto">Closed</span>
@@ -59,13 +54,8 @@ post_script: |
                 </small>
                 <br>
                 (317) 585-8468
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+              </p>'
+%}
     <section class="page-section about-heading">
       <div class="container">
         <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/about.jpg" alt="">
