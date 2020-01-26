@@ -2,26 +2,17 @@
 layout: default
 title: Business Casual - Start Bootstrap Theme
 ---
-  <section class="page-section clearfix">
-    <div class="container">
-      <div class="intro">
-        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/intro.jpg" alt="">
-        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
-          <h2 class="section-heading mb-4">
-            <span class="section-heading-upper">Fresh Coffee</span>
-            <span class="section-heading-lower">Worth Drinking</span>
-          </h2>
-          <p class="mb-3">Every cup of our quality artisan coffee starts with locally sourced, hand picked ingredients. Once you try it, our coffee will be a blissful addition to your everyday morning routine - we guarantee it!
-          </p>
-          {% include components/link_button.html
-            class = "intro-button"
-            href = "store.html"
-            text = "Visit Us Today!"
-          %}
-        </div>
-      </div>
-    </div>
-  </section>
+{% include components/container_generic.html
+    heading_upper = "Fresh Coffee"
+    heading_lower = "Worth Drinking"
+    content = "Every cup of our quality artisan coffee starts with locally
+        sourced, hand picked ingredients. Once you try it, our coffee will be a
+        blissful addition to your everyday morning routine - we guarantee it!"
+    img_src = "img/intro.jpg"
+    link_button_enable = true
+    link_button_text = "Visit Us Today!"
+    link_button_href = "store.html"
+%}
 {% include components/cta.html
     heading_upper = "Our Promise"
     heading_lower = "To You"
