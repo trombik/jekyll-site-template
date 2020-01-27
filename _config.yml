@@ -7,3 +7,8 @@ timezone: Asia/Bangkok
 encoding: UTF-8
 meta:
   description: My Cafe in an unknown city
+
+languages: ["en", "ja", "th"]
+default_lang: "en"
+exclude_from_localization: ["js", "img", "css", "scss", "node_modules", "vendor", "flags"]
+parallel_localization: true
