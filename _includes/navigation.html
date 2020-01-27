@@ -27,7 +27,7 @@
               {% if l == site.default_lang %}
               <a class="dropdown-item" href=" {{ page.url }}"><span class="flag-icon flag-icon-{{ site.data.lang2cc[l] }}"> </span>  {{ site.data.lang2name[l] }}</a>
               {% else %}
-              <a class="dropdown-item" href=" ../{{ l }}{{ page.url }}"><span class="flag-icon flag-icon-{{ site.data.lang2cc[l] }}"> </span>  {{ site.data.lang2name[l] }}</a>
+              <a class="dropdown-item" href=" /{{ l }}{{ page.url }}"><span class="flag-icon flag-icon-{{ site.data.lang2cc[l] }}"> </span>  {{ site.data.lang2name[l] }}</a>
               {% endif %}
               {% endfor %}
           </div>
