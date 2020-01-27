@@ -13,7 +13,7 @@ env:
 script:
   - bundle install --path=~/.bundle
   - bundle exec jekyll build
-  - bundle exec htmlproofer --empty_alt_ignore --disable_external ./_site
+  - bundle exec htmlproofer --empty_alt_ignore --url-ignore "/^#$/" --disable_external ./_site
 cache:
   directories:
     - node_modules
