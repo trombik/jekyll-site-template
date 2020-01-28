@@ -7,18 +7,11 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarResponsive">
     <ul class="navbar-nav mx-auto">
-      <li class="nav-item px-lg-4 {% if page.url == "/index.html" or page.url == "/" %}active{% endif %}">
-          <a class="nav-link text-uppercase text-expanded" href="/">Home {% if page.url == "/index.html" or page.url == "/" %}<span class="sr-only">(current)</span>{% endif %}</a>
+      {% for item in site.data.navi_items %}
+      <li class="nav-item px-lg-4 {% if page.url == item.href %}active{% endif %}">
+          <a class="nav-link text-uppercase text-expanded" href="{{ item.href }}">{{ item['name'] }} {% if page.url == item.href %}<span class="sr-only">(current)</span>{% endif %}</a>
       </li>
-      <li class="nav-item px-lg-4 {% if page.url == "/about/" %}active{% endif %}">
-        <a class="nav-link text-uppercase text-expanded" href="/about/">About {% if page.url == "/about/" %}<span class="sr-only">(current)</span>{% endif %}</a>
-      </li>
-      <li class="nav-item px-lg-4 {% if page.url == "/products/" %}active{% endif %}">
-        <a class="nav-link text-uppercase text-expanded" href="/products/">Products {% if page.url == "/products/" %}<span class="sr-only">(current)</span>{% endif %}</a>
-      </li>
-      <li class="nav-item px-lg-4 {% if page.url == "/store/" %}active{% endif %}">
-        <a class="nav-link text-uppercase text-expanded" href="/store/">Store {% if page.url == "/store/" %}<span class="sr-only">(current)</span>{% endif %} </a>
-      </li>
+      {% endfor %}
       <!-- dropdown -->
       <li class="nav-item px-lg-4 dropdown">
           <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language <span class="flag-icon flag-icon-{{ site.data.lang2cc[site.active_lang] }}"> </span></a>
