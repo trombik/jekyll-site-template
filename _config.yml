@@ -7,6 +7,14 @@ timezone: Asia/Bangkok
 encoding: UTF-8
 meta:
   description: My Cafe in an unknown city
+exclude:
+  - LICENSE
+  - ORIGINAL_README.md
+  - package-lock.json
+  - package.json
+  - gulpfile.js
+  - README.md
+permalink: pretty
 
 languages: ["en", "ja", "th"]
 default_lang: "en"
