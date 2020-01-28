@@ -5,15 +5,17 @@ bundle install --path=~/.vendor/bundle
 bundle exec jekyll browsersync
 ```
 
-## Plug-ins to consider
+## URLs
 
-* https://github.com/kurtsson/jekyll-multiple-languages-plugin
+* [the staging site on S3](http://jekyll-aws.s3-website-ap-northeast-1.amazonaws.com/)
+
+## Plug-ins to consider
 
 ## Links
 
 ### `jekyll`
 
-* https://www.sitepoint.com/setting-up-a-living-styleguide-in-jekyll/
+* [Setting up a Living Styleguide in Jekyll](https://www.sitepoint.com/setting-up-a-living-styleguide-in-jekyll/)
 
 ### `S3`
 
