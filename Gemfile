@@ -1,8 +1,13 @@
 # frozen_string_literal: true
 
+require 'rbconfig'
 source "https://rubygems.org"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+
+if RbConfig::CONFIG['target_os'] =~ /(?i-mx:bsd|dragonfly)/
+  gem 'rb-kqueue', '>= 0.2'
+end
 
 # for old ruby 2.0.x (CentOS)
 if RUBY_VERSION < "2.1"
