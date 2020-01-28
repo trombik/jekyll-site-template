@@ -4,6 +4,53 @@
 bundle install --path=~/.vendor/bundle
 bundle exec jekyll browsersync
 ```
+## `i18n`
+
+[`polyglot`](https://github.com/untra/polyglot) is used to support i18n.
+
+## `l10n` How-to
+
+Create a new page, `News`, which is a page for `lang` `en`, and the default
+for other language if no translated page is found. The page must have `lang`
+and `permalink` in the front matter. The file name is `news.html`.
+
+```yaml
+---
+layout: default
+title: News
+lang: en
+permalink: news/
+---
+The content
+```
+
+Create a localized one for `lang` `ja`, `news.ja.html`.
+
+```yaml
+---
+layout: default
+title: News
+lang: ja
+permalink: news/
+---
+The localized content
+```
+
+If the page should be included in the navigation bar, add an item to `_data/navi_items.yml`.
+
+```yaml
+---
+- name: Home
+  href: /
+- name: About
+  href: /about/
+- name: Products
+  href: /products/
+- name: Store
+  href: /store/
+- name: News
+  href: /news/
+```
 
 ## URLs
 
