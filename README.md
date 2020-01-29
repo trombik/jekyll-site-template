@@ -1,3 +1,8 @@
+## Features
+
+* i18n support
+* sitemap support
+
 ## Usage
 
 ```
