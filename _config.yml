@@ -15,7 +15,7 @@ exclude:
   - gulpfile.js
   - README.md
   - css/flag-icon-css/index.html
-permalink: pretty
+permalink: blog/:categories/:year/:month/:day/:title/
 
 languages: ["en", "ja", "th"]
 default_lang: "en"
