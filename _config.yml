@@ -19,5 +19,13 @@ permalink: blog/:categories/:year/:month/:day/:title/
 
 languages: ["en", "ja", "th"]
 default_lang: "en"
-exclude_from_localization: ["js", "img", "css", "scss", "node_modules", "vendor", "flags"]
+exclude_from_localization:
+  - js
+  - img
+  - css
+  - scss
+  - node_modules
+  - vendor
+  - flags
+  - favicon.ico
 parallel_localization: true
