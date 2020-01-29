@@ -5,6 +5,8 @@ description: Coffee and Tea
 author: Me
 timezone: Asia/Bangkok
 encoding: UTF-8
+project:
+  ga_analytics_id: ""
 meta:
   description: My Cafe in an unknown city
 exclude:
