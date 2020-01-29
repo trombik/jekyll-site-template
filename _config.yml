@@ -19,6 +19,8 @@ exclude:
   - css/flag-icon-css/index.html
 permalink: blog/:categories/:year/:month/:day/:title/
 
+highlighter: rouge
+
 languages: ["en", "ja", "th"]
 default_lang: "en"
 exclude_from_localization:

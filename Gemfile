@@ -24,6 +24,7 @@ group :jekyll_plugins do
   gem "jekyll-browsersync"
   gem "jekyll-polyglot"
   gem "jekyll-sitemap"
+  gem "rouge"
 end
 
 gem "html-proofer"
