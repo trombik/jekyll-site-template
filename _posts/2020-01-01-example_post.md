@@ -1,6 +1,10 @@
 ---
+lang: en
 layout: post
 title: An example post
+tags:
+    - wikipedia
+    - example
 ---
 
 A blog (a truncation of "weblog")[1] is a discussion or informational website
