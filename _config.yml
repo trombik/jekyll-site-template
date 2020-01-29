@@ -14,6 +14,7 @@ exclude:
   - package.json
   - gulpfile.js
   - README.md
+  - css/flag-icon-css/index.html
 permalink: pretty
 
 languages: ["en", "ja", "th"]
