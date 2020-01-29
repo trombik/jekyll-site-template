@@ -6,7 +6,8 @@ source "https://rubygems.org"
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 if RbConfig::CONFIG['target_os'] =~ /(?i-mx:bsd|dragonfly)/
-  gem 'rb-kqueue', '>= 0.2'
+  # gem 'rb-kqueue', '>= 0.2'
+  #  rb-kqueue-0.2.5/lib/rb-kqueue/event.rb:80:in `callback!': undefined method `callback!' for nil:NilClass (NoMethodError)
 end
 
 # for old ruby 2.0.x (CentOS)
