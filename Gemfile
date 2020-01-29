@@ -22,6 +22,7 @@ end
 group :jekyll_plugins do
   gem "jekyll-browsersync"
   gem "jekyll-polyglot"
+  gem "jekyll-sitemap"
 end
 
 gem "html-proofer"
