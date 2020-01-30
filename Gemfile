@@ -22,11 +22,12 @@ end
 
 group :jekyll_plugins do
   gem "jekyll-browsersync"
-  gem "jekyll-polyglot"
   gem "jekyll-sitemap"
-  gem "rouge"
+  gem "jekyll-archives"
+  gem "jekyll-polyglot"
 end
 
+gem "rouge"
 gem "html-proofer"
 
 gem "jekyll"
