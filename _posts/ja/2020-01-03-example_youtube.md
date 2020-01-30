@@ -1,7 +1,7 @@
 ---
 lang: ja
 layout: post
-title: YouTube example
+title: YouTubeの例
 tags:
     - youtube
     - example
