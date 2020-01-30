@@ -24,7 +24,7 @@
 
   <!-- Content-Language and link rel=alternate -->
   {% if page.type != 'tag' %}
-      {% I18n_Headers http://jekyll-aws.s3-website-ap-northeast-1.amazonaws.com %}
+    {% I18n_Headers %}
   {% else %}
       <meta http-equiv="Content-Language" content="{{ site.active_lang }}">
       {% for lang in site.languages %}
