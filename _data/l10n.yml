@@ -10,7 +10,9 @@
 # Usage:
 #
 # <p>{{ site.data.l10n["Archive of posts with"].l10n }}</p>
-"Archive of posts with":
+Archive of posts with:
   l10n: Archive of posts with
-"tag":
+tag:
   l10n: tag
+Language:
+  l10n: Language
