@@ -3,6 +3,10 @@
 * i18n support
 * sitemap support
 
+## Requirements
+
+* ImageMagick 6.x (for `jekyll-responsive-image`)
+
 ## Usage
 
 ```

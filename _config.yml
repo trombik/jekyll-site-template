@@ -18,6 +18,7 @@ exclude:
   - css/flag-icon-css/index.html
 permalink: blog/:categories/:year/:month/:day/:title/
 plugins:
+  - jekyll-responsive-image
   - jekyll-archives
   - jekyll-polyglot
   - jekyll-sitemap
@@ -49,3 +50,13 @@ jekyll-archives:
 # GA
 project:
   ga_analytics_id: ""
+
+# jekyll-responsive-image
+responsive_image:
+  template: _includes/imager-js.html
+  sizes:
+    - width: 480
+    - width: 800
+    - width: 1400
+  strip: true
+  base_path: assets
