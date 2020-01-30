@@ -16,6 +16,7 @@ exclude:
   - gulpfile.js
   - README.md
   - css/flag-icon-css/index.html
+  - "img/*.orig.*"
 permalink: blog/:categories/:year/:month/:day/:title/
 plugins:
   - jekyll-responsive-image
