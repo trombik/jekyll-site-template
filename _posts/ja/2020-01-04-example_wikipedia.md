@@ -1,7 +1,7 @@
 ---
 lang: ja
 layout: post
-title: Wikipedia example
+title: Wikipediaの例
 tags:
     - wikipedia
     - example
