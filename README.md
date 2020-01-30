@@ -69,6 +69,8 @@ If the page should be included in the navigation bar, add an item to `_data/navi
 
 * [Setting up a Living Styleguide in Jekyll](https://www.sitepoint.com/setting-up-a-living-styleguide-in-jekyll/)
 * [Custom Tags in Liquid](https://thoughtbot.com/blog/custom-tags-in-liquid)
+* [18F/18f.gsa.gov](https://github.com/18F/18f.gsa.gov) (a production
+  repository using jekyll)
 
 ### `S3`
 
