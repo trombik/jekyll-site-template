@@ -18,9 +18,14 @@ exclude:
   - README.md
   - css/flag-icon-css/index.html
 permalink: blog/:categories/:year/:month/:day/:title/
+plugins:
+  - jekyll-archives
+  - jekyll-polyglot
+  - jekyll-sitemap
 
 highlighter: rouge
 
+# i18n and l10n
 languages: ["en", "ja", "th"]
 default_lang: "en"
 exclude_from_localization:
@@ -33,3 +38,11 @@ exclude_from_localization:
   - flags
   - favicon.ico
 parallel_localization: true
+
+# archives
+jekyll-archives:
+  enabled:
+    - tags
+  layout: tag
+  permalinks:
+    tag: "/blog/tag/:name/"

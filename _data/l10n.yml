@@ -1,0 +1,16 @@
+---
+# This is a hash of localizations. Each language should have
+# `_data/${lang}/l10n.yml.
+#
+# The key identifies localized text.
+#
+# Each item must have `l10n` key. The value of the
+# key is translated text.
+#
+# Usage:
+#
+# <p>{{ site.data.l10n["Archive of posts with"].l10n }}</p>
+"Archive of posts with":
+  l10n: Archive of posts with
+"tag":
+  l10n: tag

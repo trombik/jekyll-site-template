@@ -41,7 +41,7 @@
         </h1>
         <p>Tags:
             {% for tag in page.tags %}
-            <span class="badge badge-secondary">{{ tag | upcase }}</span>
+            <a href="/blog/tag/{{ tag }}"><span class="badge badge-secondary">{{ tag | upcase }}</span></a>
             {% endfor %}
         </p>
         <section class="content-section">
