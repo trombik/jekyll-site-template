@@ -35,4 +35,4 @@ post on their blogs, but also often build social relations with their readers
 and other bloggers.[3] However, there are high-readership blogs which do not
 allow comments.
 
-[Wikipedia:blog](https://en.wikipedia.org/wiki/Blog)
+{% wikipedia blog %}
