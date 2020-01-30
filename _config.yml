@@ -5,8 +5,7 @@ description: Coffee and Tea
 author: Me
 timezone: Asia/Bangkok
 encoding: UTF-8
-project:
-  ga_analytics_id: ""
+url: http://jekyll-aws.s3-website-ap-northeast-1.amazonaws.com
 meta:
   description: My Cafe in an unknown city
 exclude:
@@ -46,3 +45,7 @@ jekyll-archives:
   layout: tag
   permalinks:
     tag: "/blog/tag/:name/"
+
+# GA
+project:
+  ga_analytics_id: ""

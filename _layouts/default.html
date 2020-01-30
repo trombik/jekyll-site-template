@@ -23,7 +23,19 @@
   <link href="/css//project.css" rel="stylesheet">
 
   <!-- Content-Language and link rel=alternate -->
-  {% I18n_Headers %}
+  {% if page.type != 'tag' %}
+      {% I18n_Headers http://jekyll-aws.s3-website-ap-northeast-1.amazonaws.com %}
+  {% else %}
+      <meta http-equiv="Content-Language" content="{{ site.active_lang }}">
+      {% for lang in site.languages %}
+        {% if lang == site.default_lang %}
+        <link rel="alternate" hreflang="{{ lang }}" href=" {{ site.url }}/blog/tag/{{ page.title }}"/>
+        {% else %}
+        <link rel="alternate" hreflang="{{ lang }}" href=" {{ site.url }}/{{ lang }}/blog/tag/{{ page.title }}"/>
+        {% endif %}
+      {% endfor %}
+      <link rel="alternate" hreflang="x-default" href=" {{ site.url }}/blog/tag/{{ page.title }}"/>
+  {% endif %}
 </head>
 <body>
   <h1 class="site-heading text-center text-white d-none d-lg-block">
