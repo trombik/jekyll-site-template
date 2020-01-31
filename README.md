@@ -18,7 +18,19 @@ bundle exec jekyll browsersync
 
 [`polyglot`](https://github.com/untra/polyglot) is used to support i18n.
 
-## `l10n` How-to
+## How-to
+
+### Resizing images
+
+Images for pages should be a ratio of 1.9:1, or 1200x630 pixels. The following
+example converts any images to the size using `convert` command in
+`ImageMagick`.
+
+```
+convert orig.jpg -resize 1200x630 -crop 1200x630 -gravity center -quality 80 resized.jpg
+```
+
+### `l10n`
 
 Create a new page, `News`, which is a page for `lang` `en`, and the default
 for other language if no translated page is found. The page must have `lang`
