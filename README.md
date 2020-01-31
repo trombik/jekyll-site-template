@@ -4,6 +4,7 @@
 * `Sitemap` support by [`jekyll-sitemap`](https://github.com/jekyll/jekyll-sitemap)
 * [Twitter Card](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards) support ([validator](https://cards-dev.twitter.com/validator))
 * Atom feed by [`jekyll-feed`](https://github.com/jekyll/jekyll-feed)
+* Twitter support by [`jekyll-twitter-plugin`](https://github.com/rob-murray/jekyll-twitter-plugin)
 
 ## Requirements
 

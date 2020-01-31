@@ -27,6 +27,7 @@ group :jekyll_plugins do
   gem "jekyll-archives"
   gem "jekyll-polyglot"
   gem "jekyll-feed"
+  gem "jekyll-twitter-plugin"
 end
 
 gem "rouge"
