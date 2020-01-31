@@ -14,7 +14,7 @@
       {% endfor %}
       <!-- dropdown -->
       <li class="nav-item px-lg-4 dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ site.data.l10n["Language"].l10n }} <span class="flag-icon flag-icon-{{ site.data.lang2cc[site.active_lang] }}"> </span></a>
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ site.data.l10n["Language"].text }} <span class="flag-icon flag-icon-{{ site.data.lang2cc[site.active_lang] }}"> </span></a>
           <div class="dropdown-menu">
               {% for l in site.languages %}
               {% if l == site.default_lang %}

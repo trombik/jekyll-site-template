@@ -9,14 +9,14 @@
 #
 # Usage:
 #
-# <p>{{ site.data.l10n["Archive of posts with"].l10n }}</p>
+# <p>{{ site.data.l10n["Archive of posts with"].text }}</p>
 Archive of posts with:
-  l10n: Archive of posts with
+  text: Archive of posts with
 tag:
-  l10n: tag
+  text: tag
 Language:
-  l10n: Language
+  text: Language
 Tags:
-  l10n: Tags
+  text: Tags
 Published:
-  l10n: Published
+  text: Published
