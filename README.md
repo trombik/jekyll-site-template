@@ -3,6 +3,7 @@
 * i18n support by [`jekyll-polyglot`](https://github.com/untra/polyglot)
 * `Sitemap` support by [`jekyll-sitemap`](https://github.com/jekyll/jekyll-sitemap)
 * [Twitter Card](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards) support ([validator](https://cards-dev.twitter.com/validator))
+* Atom feed by [`jekyll-feed`](https://github.com/jekyll/jekyll-feed)
 
 ## Requirements
 

@@ -22,6 +22,7 @@ plugins:
   - jekyll-archives
   - jekyll-polyglot
   - jekyll-sitemap
+  - jekyll-feed
 exclude:
   - LICENSE
   - ORIGINAL_README.md
@@ -69,3 +70,7 @@ responsive_image:
     - width: 1400
   strip: true
   base_path: assets
+
+# jekyll-feed
+feed:
+  path: feed/atom.xml
