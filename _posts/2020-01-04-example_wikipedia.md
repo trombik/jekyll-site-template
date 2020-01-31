@@ -1,7 +1,7 @@
 ---
 lang: en
 layout: post
-title: Wikipedia example
+title: Wikipedia Liquid tag example
 tags:
     - wikipedia
     - example

@@ -2,12 +2,26 @@
 
 title: My Cafe
 description: Coffee and Tea
-author: Me
+author: Tomoyuki Sakurai
+project_author:
+  twitter:
+    id: '@ytrombik'
+  github:
+    id: "@trombik"
+  site:
+    url: http://www.trombik.org/
 timezone: Asia/Bangkok
 encoding: UTF-8
 url: http://jekyll-aws.s3-website-ap-northeast-1.amazonaws.com
 meta:
   description: My Cafe in an unknown city
+permalink: blog/:categories/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-responsive-image
+  - jekyll-archives
+  - jekyll-polyglot
+  - jekyll-sitemap
 exclude:
   - LICENSE
   - ORIGINAL_README.md
@@ -17,12 +31,6 @@ exclude:
   - README.md
   - css/flag-icon-css/index.html
   - "img/*.orig.*"
-permalink: blog/:categories/:year/:month/:day/:title/
-plugins:
-  - jekyll-responsive-image
-  - jekyll-archives
-  - jekyll-polyglot
-  - jekyll-sitemap
 
 highlighter: rouge
 
