@@ -37,13 +37,13 @@
 {% endif %}
 
 {% if page.excerpt %}
-  <meta name="description"             content="{{ page.excerpt | strip_html | xml_escape }}">
-  <meta property="og:description"      content="{{ page.excerpt | strip_html | xml_escape }}" />
-  <meta property="twitter:description" content="{{ page.excerpt | strip_html | xml_escape }}" />
+  <meta name="description"             content="{{ page.excerpt | strip_html | truncate: 256 | xml_escape }}" />
+  <meta property="og:description"      content="{{ page.excerpt | strip_html | truncate: 256 | xml_escape }}" />
+  <meta property="twitter:description" content="{{ page.excerpt | strip_html | truncate: 256 | xml_escape }}" />
 {% else %}
-  <meta name="description"             content="{{ site.description | strip_html | xml_escape }}">
-  <meta property="og:description"      content="{{ site.description | strip_html | xml_escape }}" />
-  <meta property="twitter:description" content="{{ site.description | strip_html | xml_escape }}" />
+  <meta name="description"             content="{{ site.description | strip_html | truncate: 256 | xml_escape }}" />
+  <meta property="og:description"      content="{{ site.description | strip_html | truncate: 256 | xml_escape }}" />
+  <meta property="twitter:description" content="{{ site.description | strip_html | truncate: 256 | xml_escape }}" />
 {% endif %}
 
 {% comment %}
