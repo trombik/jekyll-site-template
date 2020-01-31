@@ -23,6 +23,7 @@ plugins:
   - jekyll-polyglot
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-twitter-plugin
 exclude:
   - LICENSE
   - ORIGINAL_README.md
