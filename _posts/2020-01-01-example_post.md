@@ -5,6 +5,9 @@ title: An example post
 tags:
     - wikipedia
     - example
+image: img/resized.jpg
+image_figcaption: Image for example purpose
+
 ---
 
 A blog (a truncation of "weblog")[1] is a discussion or informational website
