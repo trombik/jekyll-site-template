@@ -26,6 +26,7 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem "jekyll-archives"
   gem "jekyll-polyglot"
+  gem "jekyll-feed"
 end
 
 gem "rouge"
