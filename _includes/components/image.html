@@ -1,0 +1,12 @@
+{% assign image = include.image %}
+{% assign alt = include.alt %}
+{% assign figcaption = include.figcaption %}
+
+{% if image %}
+<figure class="post-image" role="img">
+  <img class="img-fluid rounded" src="{{ site.baseurl | default: '/' }}{{ image }}" alt="{{ alt }}" />
+  {% if figcaption %}
+  <figcaption class="post-image-figcaption text-left text-black-50">{{ figcaption }}</figcaption>
+  {% endif %}
+</figure>
+{% endif %}
