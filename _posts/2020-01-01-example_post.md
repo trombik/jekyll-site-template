@@ -25,6 +25,12 @@ traffic. The rise of Twitter and other "microblogging" systems helps integrate
 MABs and single-author blogs into the news media. Blog can also be used as a
 verb, meaning to maintain or add content to a blog.
 
+{% include components/image.html
+    image = "img/resized.jpg"
+    figcaption = 'An example image (you can <a href="http://example.org/" >link</a>, too)'
+    alt = "An example image"
+%}
+
 The emergence and growth of blogs in the late 1990s coincided with the advent
 of web publishing tools that facilitated the posting of content by
 non-technical users who did not have much experience with HTML or computer
@@ -40,3 +46,8 @@ and other bloggers.[3] However, there are high-readership blogs which do not
 allow comments.
 
 {% wikipedia blog %}
+
+{% include components/quote.html
+    content = "You talk the talk. Do you walk the walk?"
+    author = "Animal Mother"
+%}
