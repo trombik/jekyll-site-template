@@ -1,0 +1,16 @@
+{% assign content = include.content %}
+{% assign author = include.author | default: "Someone" %}
+
+{% if content %}
+<div class="card" style="width: 18rem;">
+  <div class="card-header">
+      Quote:
+  </div>
+  <div class="card-body">
+    <p class="card-text text-left">
+    {{ content }}
+    </p>
+    <h5 class="card-title text-right">{{ author }}</h5>
+  </div>
+</div>
+{% endif %}
