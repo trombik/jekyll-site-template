@@ -1,3 +1,10 @@
+# `jekyll` site template
+
+A `jekyll` site that includes popular `jekyll` plug-ins, templates and CSS
+from [Business Casual](http://startbootstrap.com/template-overviews/business-casual/) by
+[Start Bootstrap](http://startbootstrap.com/), and Github action to deploy the
+site to AWS S3. Designed for small businesses. MIT licensed.
+
 ## Features
 
 * i18n support by [`jekyll-polyglot`](https://github.com/untra/polyglot)
@@ -5,10 +12,12 @@
 * [Twitter Card](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards) support ([validator](https://cards-dev.twitter.com/validator))
 * Atom feed by [`jekyll-feed`](https://github.com/jekyll/jekyll-feed)
 * Twitter support by [`jekyll-twitter-plugin`](https://github.com/rob-murray/jekyll-twitter-plugin)
+* country flags in SVG by [flag-icon-css](https://github.com/lipis/flag-icon-css/)
 
 ## Requirements
 
 * `ImageMagick` 6.x (for `jekyll-responsive-image`)
+* `ruby` and `bundler`
 
 ## Usage
 
@@ -16,6 +25,24 @@
 bundle install --path=~/.vendor/bundle
 bundle exec jekyll browsersync
 ```
+
+## Directories
+
+```
+.
+├── _data (data directory for l10n)
+│   └── ja (localized data)
+├── _includes (various templates, which can be included)
+├── _layouts (layout files)
+├── _plugins (jekyll ruby plug-ins)
+├── _posts (posts directory for blog entries)
+│   └── ja (localized posts)
+├── css (CSS files)
+│   └── flag-icon-css (flag icons)
+├── img (generic image directory)
+└── scss (SCSS files)
+```
+
 ## `i18n`
 
 [`polyglot`](https://github.com/untra/polyglot) is used to support i18n.
