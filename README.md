@@ -22,6 +22,10 @@ bundle exec jekyll browsersync
 
 ## How-to
 
+### Using CC0 licensed images
+
+* [Unsplash](https://unsplash.com/)
+
 ### Resizing images
 
 Images for pages should be a ratio of 1.9:1, or 1200x630 pixels. The following
