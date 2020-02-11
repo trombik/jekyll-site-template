@@ -2,6 +2,8 @@
 lang: en
 layout: post
 title: YouTube example
+image: img/default.jpg
+image_figcaption: Default image
 tags:
     - youtube
     - example

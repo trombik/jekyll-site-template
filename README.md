@@ -43,6 +43,18 @@ bundle exec jekyll browsersync
 └── scss (SCSS files)
 ```
 
+## Blog
+
+### Default image for posts
+
+`project.blog.default.image.path` is the path to the default image for posts. When
+a post does not have `image` in its front matter, the default image is shown
+at the top of the post.
+
+Optionally, you may set `project.blog.default.image.unsplash_author` when the author
+of the default image is an [`unsplash`](https://unsplash.com/) user. If not
+empty, a link to the author's page is added below the image.
+
 ## `i18n`
 
 [`polyglot`](https://github.com/untra/polyglot) is used to support i18n.
@@ -60,7 +72,7 @@ example converts any images to the size using `convert` command in
 `ImageMagick`.
 
 ```
-convert orig.jpg -resize 1200x630 -crop 1200x630 -gravity center -quality 80 resized.jpg
+convert orig.jpg -resize '1200x630^' -gravity center -extent 1200x630 -quality 80 resized.jpg
 ```
 
 ### `l10n`
