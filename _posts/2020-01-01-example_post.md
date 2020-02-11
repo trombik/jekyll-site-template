@@ -6,7 +6,8 @@ tags:
     - wikipedia
     - example
 image: img/resized.jpg
-image_figcaption: Image for example purpose
+image_figcaption: Image for example post
+image_alt: Image for example post
 
 ---
 

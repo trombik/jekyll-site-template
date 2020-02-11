@@ -7,6 +7,7 @@ tags:
     - example
 image: img/resized.jpg
 image_figcaption: 参考画像
+image_alt: 参考画像
 
 ---
 

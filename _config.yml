@@ -75,3 +75,13 @@ responsive_image:
 # jekyll-feed
 feed:
   path: feed/atom.xml
+
+project:
+  blog:
+    default:
+      # image to display when a post does not have `image` in front matter
+      image:
+        path: img/default.jpg
+        # unsplash user name of the default image above. set empty if the
+        # default image is not from unsplash users. see: https://unsplash.com/
+        unsplash_author: kimberlyfarmer

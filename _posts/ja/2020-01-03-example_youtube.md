@@ -2,6 +2,8 @@
 lang: ja
 layout: post
 title: YouTubeの例
+image: img/default.jpg
+image_figcaption: Default image
 tags:
     - youtube
     - example
