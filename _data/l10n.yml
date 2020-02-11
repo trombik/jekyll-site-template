@@ -4,7 +4,7 @@
 #
 # The key identifies localized text.
 #
-# Each item must have `l10n` key. The value of the
+# Each item must have `text` key. The value of the
 # key is translated text.
 #
 # Usage:
@@ -20,3 +20,5 @@ Tags:
   text: Tags
 Published:
   text: Published
+Quote:
+  text: Quote

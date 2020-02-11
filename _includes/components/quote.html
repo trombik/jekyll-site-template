@@ -2,15 +2,15 @@
 {% assign author = include.author | default: "Someone" %}
 
 {% if content %}
-<div class="card" style="width: 18rem;">
-  <div class="card-header">
-      Quote:
-  </div>
+<div class="card">
+  <div class="card-header">{{ site.data.l10n['Quote'].text }}</div>
   <div class="card-body">
-    <p class="card-text text-left">
-    {{ content }}
-    </p>
-    <h5 class="card-title text-right">{{ author }}</h5>
+    <blockquote>
+      <p class="card-text text-left font-italic">
+      "{{ content }}"
+      </p>
+      <footer class="card-title text-right">{{ author }}</footer>
+    </blockquote>
   </div>
 </div>
 {% endif %}
