@@ -24,8 +24,11 @@ lang: en
               {% endif %}
             </div>
             </a>
+            {% if post.description %}
+              <div class="post-description"><p>{{ post.description | strip_html }}</p></div>
+            {% endif %}
             <div class="post-excerpt">
-                <p>{{ post.excerpt }}</p>
+              <p>{{ post.excerpt | strip_html }}</p>
             </div>
         </div>
     </div>
