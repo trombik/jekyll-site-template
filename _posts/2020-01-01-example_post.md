@@ -2,6 +2,7 @@
 lang: en
 layout: post
 title: An example post
+description: This post demonstrates common patterns in blog posts.
 tags:
     - wikipedia
     - example
