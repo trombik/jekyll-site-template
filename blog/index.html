@@ -1,11 +1,11 @@
 ---
 layout: default
 title: Blog
-permalink: blog/
 lang: en
+# archive page is not crawled by search engines
+sitemap: false
 ---
-{% assign posts = site.posts | slice:0, 6 %}
-{% for post in posts %}
+{% for post in paginator.posts %}
 <section class="post-section">
     <div class="container">
         <div class="col-xl-9 col-lg-10 mx-auto bg-faded rounded p-5">
@@ -32,5 +32,26 @@ lang: en
             </div>
         </div>
     </div>
-</section>
 {% endfor %}
+  <div class="container">
+    <div class="pagination">
+      <div class="col-xl-9 col-lg-10 mx-auto bg-faded rounded p-5">
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="previous">
+          Previous
+        </a>
+        {% else %}
+        <span class="previous">Previous</span>
+        {% endif %}
+        <span class="page_number ">
+        Page: {{ paginator.page }} of {{ paginator.total_pages }}
+        </span>
+        {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+        {% else %}
+        <span class="next ">Next</span>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
