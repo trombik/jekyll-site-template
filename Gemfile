@@ -28,6 +28,7 @@ group :jekyll_plugins do
   gem "jekyll-polyglot"
   gem "jekyll-feed"
   gem "jekyll-twitter-plugin"
+  gem "jekyll-paginate"
 end
 
 gem "rouge"

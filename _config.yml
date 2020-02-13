@@ -16,6 +16,8 @@ url: http://jekyll-aws.s3-website-ap-northeast-1.amazonaws.com
 meta:
   description: My Cafe in an unknown city
 permalink: blog/:categories/:year/:month/:day/:title/
+paginate: 5
+paginate_path: "blog/archives/:num/"
 
 plugins:
   - jekyll-responsive-image
@@ -24,6 +26,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-twitter-plugin
+  - jekyll-paginate
 exclude:
   - LICENSE
   - ORIGINAL_README.md
