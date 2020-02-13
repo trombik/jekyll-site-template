@@ -14,6 +14,10 @@ site to AWS S3. Designed for small businesses. MIT licensed.
 * Twitter support by [`jekyll-twitter-plugin`](https://github.com/rob-murray/jekyll-twitter-plugin)
 * country flags in SVG by [flag-icon-css](https://github.com/lipis/flag-icon-css/)
 
+## Demo
+
+Live demo is available at [the staging site on S3](http://jekyll-aws.s3-website-ap-northeast-1.amazonaws.com/).
+
 ## Requirements
 
 * `ImageMagick` 6.x (for `jekyll-responsive-image`)
@@ -118,10 +122,6 @@ If the page should be included in the navigation bar, add an item to `_data/navi
 - name: News
   href: /news/
 ```
-
-## URLs
-
-* [the staging site on S3](http://jekyll-aws.s3-website-ap-northeast-1.amazonaws.com/)
 
 ## Plug-ins to consider
 
