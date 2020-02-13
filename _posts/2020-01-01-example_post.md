@@ -18,6 +18,9 @@ image_alt: Image for example post
 In this post, you will learn quickly how to write posts. This is the first
 paragraph in the post.
 
+The source of this post is available at
+[trombik/jekyll-prod/_posts/2020-01-01-example_post.md](https://raw.githubusercontent.com/trombik/jekyll-prod/devel/_posts/2020-01-01-example_post.md).
+
 ## Posts
 
 It is assumed that your posts are in markdown format, whose file name must
