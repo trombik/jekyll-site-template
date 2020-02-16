@@ -5,14 +5,15 @@ lang: en
 # archive page is not crawled by search engines
 sitemap: false
 ---
-{% for post in paginator.posts %}
 <section class="post-section">
     <div class="container">
         <div class="col-xl-9 col-lg-10 mx-auto bg-faded rounded p-5">
-            <a href="{{ post.url }}">
+{% for post in paginator.posts %}
+            <a class="text-dark" href="{{ post.url }}">
             <div class="post-title">
                 <h2>{{ post.title }}</h2>
             </div class="post-title">
+            <p>{{ site.data.l10n['Published'].text }}: {{ post.date | date: '%Y/%m/%d' }}</p>
             <div class="post-img">
               {% if post.image %}
                 {% include components/feature-image.html image = post.image %}
@@ -30,9 +31,10 @@ sitemap: false
             <div class="post-excerpt">
               <p>{{ post.excerpt | strip_html }}</p>
             </div>
+            <hr />
+{% endfor %}
         </div>
     </div>
-{% endfor %}
   <div class="container">
     <div class="pagination">
       <div class="col-xl-9 col-lg-10 mx-auto bg-faded rounded p-5">
